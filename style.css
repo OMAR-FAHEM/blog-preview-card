@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+body {
+  font-family: "Figtree", sans-serif;
+  /* weights 500 800 */
+}
+a {
+  text-decoration: none;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+  width: 70%;
+  height: 80vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background-color: var(--White);
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 7px 7px;
+}
+.image-svg img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.section {
+  background-color: var(--primary-color);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-size: 15px;
+}
+p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card h2 {
+  margin: 10px 0;
+}
+.card a {
+  color: var(--Black);
+}
+.card a:hover {
+  transition: color 0.3s;
+  color: var(--primary-color);
+}
+.text {
+  color: var(--Grey);
+  line-height: 1.6;
+}
+.puplisher {
+  display: flex;
+  align-items: center;
+}
+.puplisher img {
+  width: 30px;
+}
+.puplisher p {
+  font-weight: 800;
+  margin: 0 0 0 10px;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
